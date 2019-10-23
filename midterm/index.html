@@ -2,22 +2,47 @@
 <html ng-app class="no-js" lang="en" dir="ltr">
   <head>
 
-    <!--begin angular js-->
-    <!--end angular js-->
 
-    <!--begin datatables-->
-    <!--end datatables-->
 
-    <!--begin fontawasome-->
-    <!--end fontawasome-->
+
+
+
+
 
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Angels Midterm</title>
+
+    <!--begin angular js-->
+    <script src="js/vendor/angular-1.7.8/angular.min.js"></script>
+    <script src="js/vendor/angular-1.7.8/angular-animate.min.js"></script>
+    <script src="js/vendor/angular-1.7.8/angular-route.min.js"></script>
+
+    <!--end angular js-->
+
+    <!--begin datatables-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/dt-1.10.20/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/zf/dt-1.10.20/datatables.min.js"></script>
+    <!--end datatables-->
+
+    <!--begin fontawasome-->
+    <!-- The font Awesome code below is several revisions back.
+https://stackoverflow.com/questions/14698589/fontawesome-not-available-as-a-font-family
+ I discovered that it would work from an article on stack overflow.  all code should at some point be updated to reflect the last calling syntax for font awesome -->
+
+<link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <!--end fontawasome-->
+
+    
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+
   </head>
   <body>
     <!--begin nav-->
@@ -31,6 +56,12 @@
 
     <!--begin content-->
     <!--begin angular js-->
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
     <!--end angular js-->
     <!--end content-->
 
